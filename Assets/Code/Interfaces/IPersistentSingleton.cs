@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class IPresistentSingleton<T> : MonoBehaviour where T : MonoBehaviour
+public class IPersistentSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T _uniqueInstance = null;
 #if UNITY_EDITOR
@@ -65,7 +65,6 @@ public class IPresistentSingleton<T> : MonoBehaviour where T : MonoBehaviour
         if (_uniqueInstance == this)
             _uniqueInstance = null;
     }
-
 
     protected virtual void OnApplicationQuit()
     {
