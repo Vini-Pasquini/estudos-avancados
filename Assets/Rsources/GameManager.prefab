@@ -50,6 +50,7 @@ MonoBehaviour:
     _audioMixer: {fileID: 24100000, guid: 56385d5fe34400b47b6d332fd036b056, type: 2}
     _musicSource: {fileID: 202135612101510760}
     _sfxSource: {fileID: 6526651007875600725}
+    _poolSize: 10
     _sfxSourcePool: []
 --- !u!82 &202135612101510760
 AudioSource:
